@@ -5,7 +5,7 @@ public class Hello { //클래스 선언 : 클래스 이름은 대문자로 시�
 	public static void main(String[] args) { //메인 메소드 : 자바 프로그램 실행 시 가장 먼저 실행되는 메소드
 		
 		System.out.println("Hello, Java"); // Hello, Java 를 출력하는 메소드
-		
+		System.out.println("Hello");
 		
 		}
 
