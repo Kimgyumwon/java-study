@@ -7,6 +7,7 @@ public class Hello { //클래스 선언 : 클래스 이름은 대문자로 시�
 		System.out.println("Hello, Java"); // Hello, Java 를 출력하는 메소드
 		System.out.println("Hello");
 		
+		
 		}
 
 }
