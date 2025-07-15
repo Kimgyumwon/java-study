@@ -9,7 +9,7 @@ public class Hello { //클래스 선언 : 클래스 이름은 대문자로 시�
 		
 		
 		}
-
+// commit 메시지 연습
 }
 /* Eclipse 단축키 정리
 - 단축키 확인
