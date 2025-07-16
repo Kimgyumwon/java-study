@@ -27,9 +27,6 @@ public class PrimitiveAndStringConversionExample {
 		String str = "" + 3;
 		System.out.println(str);
 		
-		String.valueOf(value2);
-		System.out.println(value2);
-		
 		
 	}
 
