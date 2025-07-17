@@ -31,7 +31,7 @@ public class AssignmentOperatorExample {
 		//금액을 입력받아 500원, 100원, 50원, 10원, 1원 동전으로 변경하려고 합니다.
 		// 최소 필요한 동전의 개수를 출력하는 프로그램을 구현하시오.
 		Scanner sc = new Scanner(System.in);
-		System.out.print("숫자를 입력해주세요: ");
+		System.out.print("금액를 입력해주세요: ");
 		int value2 = sc.nextInt();
 		System.out.println("500원: "+value2/500+" 개");
 		System.out.println("100원: "+value2%500/100+" 개");
@@ -40,6 +40,9 @@ public class AssignmentOperatorExample {
 		System.out.println("1원: "+value2%10+" 개");
 		
 		
+		
+		
 	}
 
+	
 }
