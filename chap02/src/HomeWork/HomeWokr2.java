@@ -12,8 +12,8 @@ public class HomeWokr2 {
 		System.out.printf("세로 : ");
 		double b = sc.nextDouble();
 		
-		System.out.printf("면적 : %5.2f\n",(a*b));
-		System.out.printf("둘레 : %4.1f",(a+b)*2);
+		System.out.printf("면적 : %.2f\n",(a*b));
+		System.out.printf("둘레 : %.1f",(a+b)*2);
 		
 		
 	}

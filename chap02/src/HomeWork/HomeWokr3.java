@@ -17,6 +17,10 @@ public class HomeWokr3 {
 		System.out.println("두번째 문자: " + b);
 		System.out.println("세번째 문자: " + c);
 		
+		System.out.println("첫번째 문자: " + input.charAt(0));
+		System.out.println("두번째 문자: " + input.charAt(1));
+		System.out.println("세번째 문자: " + input.charAt(2));
+		
 		
 		
 	}

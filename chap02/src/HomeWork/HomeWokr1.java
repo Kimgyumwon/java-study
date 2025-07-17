@@ -10,8 +10,7 @@ public class HomeWokr1 {
 		double kg = sc.nextDouble();
 		System.out.printf("키(m) : ");
 		double m = sc.nextDouble();
-		System.out.printf("BMI 지수: %2.1f",kg/(m*m));
-		
+		System.out.printf("BMI 지수: %.1f",kg/(m*m));
 	}
 
 }

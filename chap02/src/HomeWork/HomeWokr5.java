@@ -7,14 +7,14 @@ public class HomeWokr5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("국어 : ");
-		int a = sc.nextInt();
+		double a = sc.nextDouble();
 		System.out.printf("영어 : ");
-		int b = sc.nextInt();
+		double b = sc.nextDouble();
 		System.out.printf("수학 : ");
-		int c = sc.nextInt();
+		double c = sc.nextDouble();
 		
-		System.out.println("총점: " + (a+b+c));
-		System.out.println("평균: " + (a+b+c)/3);
+		System.out.println("총점: " + (int)(a+b+c));
+		System.out.println("평균: " + (int)(a+b+c)/3);
 		
 		
 		
