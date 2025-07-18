@@ -39,24 +39,18 @@ public class IfElseIfElseExample {
 		System.out.print("문자 하나를 입력하세요 : ");
 		char a = sc.nextLine().charAt(0);
 		
-		int b = a;
-		if ( b>= 'A' && b <= 'Z') {
+		if ( a>= 'A' && a <= 'Z') {
 			System.out.println("대문자");
-		} else if (b >= 'a' && b <= 'z') {
-			System.out.println("소문자");
-			
-		} else if (b >= '0' && b <= '9') {
-			System.out.println("숫자");
-			
-		} else {
-			System.out.println("기타문자");
-			
 		}
-		
-		
-		
-		
-		
+		else if (a >= 'a' && a <= 'z') {
+			System.out.println("소문자");
+		}
+		else if (a >= '0' && a <= '9') {
+			System.out.println("숫자");
+		}
+		else {
+			System.out.println("기타문자");
+		}
 	}
 
 }
