@@ -13,11 +13,13 @@ public class Homewokr04 {
 		System.out.print("영어 : ");
 		int e = sc.nextInt();
 		
-		int total = k + m + e;
-		int avg = (k+m+e)/3;
+		int sum = k + m + e;
+		double avg = (k+m+e)/3.0;
 		
-		String str = (k >= 60 && m >= 60 && e >= 60 && avg >=90 ) ? "휴대폰을 바꿀 수 있습니다." : "휴대폰을 바꿀 수 없습니다.";
-		System.out.println("합계: " + total);
+		String str = (k >= 60 && m >= 60 && e >= 60 && avg >90 ) 
+				? "휴대폰을 바꿀 수 있습니다." 
+				: "휴대폰을 바꿀 수 없습니다.";
+		System.out.println("합계: " + sum);
 		System.out.println("평균: " + avg);
 		System.out.println(str);
 		

@@ -6,7 +6,7 @@ public class Homewokr05 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("주문번호(-) : ");
+		System.out.print("주민번호(-) : ");
 		char str = sc.nextLine().charAt(7);
 		
 		String str1 = (str == '1' || str == '3') ? 
