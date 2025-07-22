@@ -20,9 +20,8 @@ public class Homework08 {
 			System.out.println("포함된 개수 : " + sum);
 			System.out.print("다시 입력하시겠습니까?");
 			yn = sc.nextLine().charAt(0);
-			if( yn == 'n' || yn == 'N') break;
 			if( yn == 'y'|| yn == 'Y') continue;
-		
+			if( yn == 'n' || yn == 'N') break;
 			}
 		
 	}

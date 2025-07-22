@@ -1,4 +1,4 @@
-package sec02.exam06;
+package sec02.test01;
 
 public class test {
 
@@ -29,6 +29,10 @@ public class test {
 //		avg = (double)sum/b;
 //		System.out.println(sum);
 //		System.out.println(avg);
+		
+		double a = 0;
+		a= Math.random();
+		System.out.println(a);
 	}
 
 }

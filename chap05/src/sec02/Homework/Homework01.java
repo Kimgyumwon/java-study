@@ -10,9 +10,9 @@ public class Homework01 {
 		int sum = 0;
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("정수(1~50): ");
+			System.out.print("정수(1~50): ");
 			int num = sc.nextInt();
-			if(num < 0 || num > 50) {
+			if(num <= 0 || num > 50) {
 				System.out.println("1~50사이의 정수를 입력하세요.");
 				continue;}
 			
