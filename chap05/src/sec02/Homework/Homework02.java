@@ -15,9 +15,9 @@ public class Homework02 {
 			if(num == 0) {System.out.println("프로그램을 종료합니다."); break;}
 			else {	System.out.println("====="+num+"단=====");
 				for(int i=1; i<10; i++) {
-					
 					System.out.println(num +"*"+i+"="+num*i);
-					}
+				}
+					
 			}
 			
 		}

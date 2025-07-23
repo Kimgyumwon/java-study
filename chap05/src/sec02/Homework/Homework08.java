@@ -6,7 +6,7 @@ public class Homework08 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		char yn;
+		String yn;
 		
 		while(true) {
 			int sum = 0;
@@ -18,10 +18,19 @@ public class Homework08 {
 					if(ch == str.charAt(i)) sum++;
 				}
 			System.out.println("포함된 개수 : " + sum);
-			System.out.print("다시 입력하시겠습니까?");
-			yn = sc.nextLine().charAt(0);
-			if( yn == 'y'|| yn == 'Y') continue;
-			if( yn == 'n' || yn == 'N') break;
+			while(true) {
+				System.out.print("다시 입력하시겠습니까: ");
+				yn = sc.nextLine();
+				if("n".equalsIgnoreCase(yn)) {
+					System.out.println("프로그램 종료");
+				}else if("y".equalsIgnoreCase(yn)) {
+					break;
+				}else {
+					System.out.println("잘못된 대답입니다. 다시 입력해주세요.");
+				}
+			}
+			
+			
 			}
 		
 	}

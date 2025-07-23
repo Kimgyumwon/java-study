@@ -13,7 +13,7 @@ public class Homework07 {
 			if( a<=0) System.out.println("양수가 아닙니다.");
 			break;
 			
-	}
+		}
 		for(int i=1; i<=a; i++) {
 			if(i%2 == 1)System.out.print("박");
 			if(i%2 == 0)System.out.print("수");

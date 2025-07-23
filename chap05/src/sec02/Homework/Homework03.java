@@ -10,8 +10,8 @@ public class Homework03 {
 		for(;;) {
 			System.out.print("입력 : ");
 			String str = sc.nextLine();
-			System.out.println(str);
 			if("탈출".equals(str)) break;
+			System.out.println(str);
 		}
 		
 		System.out.println("프로그램 종료.");

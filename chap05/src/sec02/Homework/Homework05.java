@@ -11,15 +11,14 @@ public class Homework05 {
 		do {
 			System.out.print("숫자(0을 입력하면 종료) :");
 			num = sc.nextInt();
-		if(num < 0) continue;
+		    if(num < 0) continue;
 			sum += num;
-			
 		} while (num != 0);
-			System.out.println("양수의 합계 :" + sum);
-		
-		
-		
-		
+		System.out.println("양수의 합계 :" + sum);
 	}
-
 }
+		
+		
+		
+		
+
