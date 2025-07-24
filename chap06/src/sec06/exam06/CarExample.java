@@ -5,8 +5,6 @@ public class CarExample {
 	public static void main(String[] args) {
 		
 		Car	myCar = new Car();
-		
-//		System.out.println
 //		(myCar.speed); 외부에서는 private에 접근 불가
 		
 		// 잘못된 속도 변경
@@ -20,8 +18,5 @@ public class CarExample {
 			myCar.setStop(true);
 		}
 		System.out.println("현재 속도 : " + myCar.getSpeed());
-		
-		
 	}
-
 }
