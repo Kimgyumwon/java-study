@@ -2,7 +2,7 @@ package Homework.Homework02;
 
 import java.util.Objects;
 
-public class Lottery {
+public class Lottery implements Comparable<Lottery>{
 	private String name;
 	private String phone;
 	
@@ -51,6 +51,16 @@ public class Lottery {
 	public String toString() {
 		return "이름=" + name + ", 휴대폰 번호=" + phone;
 	}
+
+	@Override
+	public int compareTo(Lottery o) {
+		
+		return this.name.compareTo(o.name);
+
+		
+	}
+
+
 	
 	
 	

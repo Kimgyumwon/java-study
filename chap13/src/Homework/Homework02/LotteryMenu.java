@@ -1,5 +1,6 @@
 package Homework.Homework02;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class LotteryMenu {
@@ -22,16 +23,13 @@ public class LotteryMenu {
 		case 1:insertObject(); break;
 		case 2:deleteObject(); break;
 		case 3:searchObject(); break;
-		case 4:	
-		case 5:	
-		case 6:	
-		case 9:	
+		case 4:winObject(); break;
+		case 5:sortedWinObject(); break;
+		case 6:searchWinner(); break;
+		case 9:System.out.println("프로그램 종료."); return;
 		default: System.out.println("잘못 입력하였습니다. 다시 입력해주세요."); 
 		}
 		
-		if( a == 9) {
-			System.out.println("프로그램 종료."); break;
-		}
 		}
 	}
 	// 1. 추첨 대상 추가용 메소드
@@ -71,18 +69,40 @@ public class LotteryMenu {
 	}
 	// 3. 추첨 대상 목록 조회 메소드
 	public void searchObject() {
+		System.out.println("===== 3. 추첨 대상 목록 조회 =====");
 		System.out.println(controller.searchObject());
 	}
 	// 4. 당첨 대상 확인용 view 메소드
 	public void winObject() {
 		System.out.println("===== 4. 당첨 대상 구성 =====");
-		System.out.println(controller.lottery);
 		if (controller.winObject() == null) {
 			System.out.println("추첨 대상이 4명이상이어야 당첨 대상을 구성할 수 있습니다.");
 		}
+		System.out.println(controller.winObject());
 	}
-	
-	
+	// 5. 정렬된 당첨 대상 확인
+	public void sortedWinObject() {
+		System.out.println("===== 5. 정렬된 당첨 대상 확인 =====");
+		Iterator<Lottery> a = controller.sortedWinObject().iterator();
+		while (a.hasNext()) {
+			System.out.println(a.next());
+		}
+	}
+	// 6. 당첨 대상 검색용 view 메소드
+	public void searchWinner() {
+		sc.nextLine();
+		System.out.println("===== 6. 당첨 대상 검색 =====");
+		System.out.println("검색할 대상의 이름과 핸드폰 번호를 입력하세요.");
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		System.out.print("핸드폰 번호('-'빼고) : ");
+		String phone = sc.nextLine();
+		if (controller.searchWinner(new Lottery(name, phone)) ) {
+			System.out.println("축하합니다. 당첨 목록에 존재합니다.");
+		} else {
+			System.out.println("다음 기회에!");
+		}
+	}
 	
 	
 	
