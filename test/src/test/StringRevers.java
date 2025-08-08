@@ -1,10 +1,15 @@
 package test;
 
+import java.util.Scanner;
+
 public class StringRevers {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		String str = "abcde";
+		System.out.print("문자열 입력: ");
+		String str = sc.nextLine();
+		
 		String strRevers = "";
 		for (int i = str.length()-1; i >= 0; i--) {
 			strRevers += str.charAt(i);

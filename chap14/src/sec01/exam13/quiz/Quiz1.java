@@ -14,7 +14,7 @@ public class Quiz1 {
 			while (true) {
 				int a = reader.read(c);
 				if( a == -1) break;
-				String str = new String(c);
+				String str = new String(c,0,a);
 				System.out.println(str);
 				
 				

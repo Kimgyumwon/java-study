@@ -1,12 +1,27 @@
 package test;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Max {
 
 	public static void main(String[] args) {
-		int[] max = {0,16,32,15,11,31,10,2};
+		Scanner sc = new Scanner(System.in);
+//		int[] max = {0,16,32,15,11,31,10,2};
+		
+		System.out.print("배열의 크기를 입력해주세요: ");
+		int z = sc.nextInt();
+		
+		int[] max = new int[z];
 		int temp = 0;
+
+		for (int i = 0; i < max.length; i++) {
+			System.out.print("배열의 들어가 수를 입력해주세요: ");
+			max[i] = sc.nextInt();
+		}
+		
+		
+		
 		// 내가만든 선택정렬..
 //		for (int i = 0; i < max.length-1; i++) {
 //			for (int j = i+1; j < max.length; j++) {

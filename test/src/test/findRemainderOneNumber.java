@@ -10,20 +10,13 @@ public class findRemainderOneNumber {
 		int n = sc.nextInt();
 		int count = 1;
 		
-		
-		
 		while ( true ) {
 			if ( n % count == 1) {
 				break;
 			}
 			count++;
 		}
-		
 		System.out.println("나머지가 1이 되는 수: " + count);
-		
-		
-		
-		
 		
 	}
 

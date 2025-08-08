@@ -1,6 +1,5 @@
 package sec01.exam13.quiz;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,7 +13,6 @@ public class Quiz2 {
 
 		char[] read = new char[100];
 		
-		int readNum = reader.read(read);
 		
 		System.out.println(read);
 		
